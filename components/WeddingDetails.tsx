@@ -64,9 +64,22 @@ export function WeddingDetails() {
                   <Clock className="w-5 h-5 text-gold" />
                   <span className="text-lg uppercase tracking-wider">{event.day} | {event.time}</span>
                 </div>
-                <div className="flex items-center gap-3 mt-4 pt-4 border-t border-champagne w-full justify-center">
-                  <MapPin className="w-5 h-5 text-gold flex-shrink-0" />
-                  <span className="text-md font-medium text-text-main">{event.venue}</span>
+                <div className="flex items-center gap-3 mt-4 pt-4 border-t border-champagne w-full justify-center flex-col">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-5 h-5 text-gold flex-shrink-0" />
+                    <span className="text-md font-medium text-text-main">{event.venue}</span>
+                  </div>
+                  {event.mapShareUrl && (
+                    <a
+                      href={event.mapShareUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 mt-2 px-5 py-2 rounded-full text-xs font-medium text-olive bg-white border border-champagne hover:bg-olive hover:text-white transition-colors shadow-sm"
+                    >
+                      <MapPin className="w-3.5 h-3.5" />
+                      Get Directions
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

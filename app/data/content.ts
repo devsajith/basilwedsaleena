@@ -28,6 +28,8 @@ export const weddingData = {
       day: "MONDAY",
       time: "09:30 AM",
       venue: "Mar Ignatous Noorono Church, 14th Mile",
+      mapShareUrl: "https://maps.app.goo.gl/CCQk8L25FPS6Lhwr9",
+      mapEmbedUrl: "https://maps.google.com/maps?q=Mar+Ignatous+Noorono+Church+14th+Mile+Adimali&t=&z=15&ie=UTF8&iwloc=&output=embed",
     },
     {
       title: "Wedding Reception",
@@ -35,13 +37,15 @@ export const weddingData = {
       day: "MONDAY",
       time: "12:30 PM",
       venue: "St Antony's Catholic Church Auditorium, Irumbupalam, Adimali",
+      mapShareUrl: "https://maps.app.goo.gl/1p3GzP3n1A2LL4kq7",
+      mapEmbedUrl: "https://maps.google.com/maps?q=St+Antony%27s+Catholic+Church+Auditorium+Irumbupalam+Adimali&t=&z=15&ie=UTF8&iwloc=&output=embed",
     },
   ],
   venue: {
     name: "Mar Ignatous Noorono Church, 14th Mile",
     address: "14th Mile, Adimali, Idukki",
     mapUrl: "https://maps.google.com/maps?q=Mar+Ignatous+Noorono+Church+14th+Mile+Adimali&t=&z=15&ie=UTF8&iwloc=&output=embed",
-    mapShareUrl: "https://maps.google.com/maps?q=Mar+Ignatous+Noorono+Church+14th+Mile+Adimali",
+    mapShareUrl: "https://maps.app.goo.gl/CCQk8L25FPS6Lhwr9",
   },
   sharingOurJoy: "Jaisy Joy & Eldhose Bijoy",
   contacts: [
