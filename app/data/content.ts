@@ -55,7 +55,7 @@ export const weddingData = {
     },
     {
       title: "Bride's Family",
-      phone: "+91 6282935515",
+      phone: "+91 94009 77485",
     },
   ],
   gallery: [
