@@ -50,14 +50,12 @@ export const weddingData = {
   sharingOurJoy: "Jaisy Joy & Eldhose Bijoy",
   contacts: [
     {
-      name: "Jaisy Joy",
-      phone: "+91 9846014203",
-      relation: "Sharing Our Joy",
+      title: "Groom's Family",
+      phone: "+91 99953 56042",
     },
     {
-      name: "Eldhose Bijoy",
+      title: "Bride's Family",
       phone: "+91 6282935515",
-      relation: "Sharing Our Joy",
     },
   ],
   gallery: [

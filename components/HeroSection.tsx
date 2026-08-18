@@ -13,17 +13,9 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white py-12">
-      {/* Background Texture/Image */}
+      {/* Background Texture */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-white/80 z-10" />
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: "url('/images/hero-bg.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
       </div>
 
       <div className="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center w-full">
@@ -34,11 +26,10 @@ export function HeroSection() {
           className="mb-8"
         >
           <div className="flex justify-center mb-4">
-             {/* Rings Icon Placeholder (Can use Lucide or simple SVG) */}
-             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-gold">
-               <circle cx="9" cy="12" r="5" />
-               <circle cx="15" cy="12" r="5" />
-             </svg>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-gold">
+              <circle cx="9" cy="12" r="5" />
+              <circle cx="15" cy="12" r="5" />
+            </svg>
           </div>
           <p className="font-heading text-sm md:text-base text-text-muted tracking-[0.2em] uppercase">
             Wedding Invitation
@@ -49,34 +40,20 @@ export function HeroSection() {
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.5 }}
-          className="w-full flex justify-center mb-6"
+          className="w-full flex justify-center"
         >
           <img 
             src="/images/bridegroom.jpg" 
             alt="Basil and Aleena Portrait" 
-            className="w-full max-w-sm md:max-w-md max-h-[500px] object-cover rounded-3xl shadow-xl border border-champagne" 
+            className="w-full md:max-w-lg h-[340px] md:h-[420px] object-cover rounded-2xl shadow-lg border border-champagne" 
           />
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="my-4 max-w-2xl text-center px-4"
-        >
-          <p className="font-cursive italic text-lg md:text-xl text-olive leading-relaxed">
-            {weddingData.bibleVerse.text}
-          </p>
-          <p className="font-heading text-xs md:text-sm text-gold tracking-widest uppercase mt-2">
-            — {weddingData.bibleVerse.reference}
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
-          className="mt-4 flex flex-col items-center"
+          className="mt-6 flex flex-col items-center"
         >
           <h1 className="font-cursive italic text-5xl md:text-7xl text-text-main mb-6">
             {weddingData.groom} <span className="mx-2 text-4xl md:text-5xl">&amp;</span> {weddingData.bride}

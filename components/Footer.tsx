@@ -34,14 +34,14 @@ export function Footer() {
           className="flex flex-col items-center"
         >
           <h3 className="font-cursive text-3xl md:text-4xl mb-4">
-            {weddingData.groom} & {weddingData.bride}
+            {weddingData.groom} &amp; {weddingData.bride}
           </h3>
           <p className="font-body text-sm text-white/60 mb-6 uppercase tracking-widest">
             We look forward to celebrating this blessed day with you.
           </p>
 
           <a
-            href="https://wa.me/919645851927?text=Hi%2C%20I%20saw%20the%20Alan%20%26%20Benitta%20wedding%20invitation%20website.%20I%20would%20like%20a%20similar%20invitation%20website."
+            href="https://wa.me/919645851927?text=Hi%2C%20I%20saw%20the%20Basil%20%26%20Aleena%20wedding%20invitation%20website.%20I%20would%20like%20a%20similar%20invitation%20website."
             target="_blank"
             rel="noreferrer"
             className="inline-block mb-4 px-6 py-2 rounded-full border border-gold/70 text-gold-light hover:bg-gold hover:text-olive transition-colors text-xs uppercase tracking-widest font-medium"
@@ -51,7 +51,7 @@ export function Footer() {
         </motion.div>
 
         <div className="border-t border-white/10 pt-8 mt-8 text-xs text-white/40 flex flex-col md:flex-row justify-center items-center gap-2">
-          <span>&copy; {new Date().getFullYear()} {weddingData.groom} & {weddingData.bride}.</span>
+          <span>&copy; {new Date().getFullYear()} {weddingData.groom} &amp; {weddingData.bride}.</span>
           <span>Made with love.</span>
         </div>
       </div>
